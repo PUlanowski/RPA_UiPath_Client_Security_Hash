@@ -134,7 +134,7 @@
                   <OutArgument x:TypeArguments="x:String">[out_ClientID]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[out_ClientCountryArray(1).ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[out_ClientCountryArray(1).ToString.Trim]</InArgument>
                 </Assign.Value>
               </Assign>
               <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="243.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[&quot;client id is: &quot; + out_ClientID]" />
@@ -158,7 +158,7 @@
                   <OutArgument x:TypeArguments="x:String">[out_ClientName]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[out_ClientNameArray(1).ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[out_ClientNameArray(1).ToString.Trim]</InArgument>
                 </Assign.Value>
               </Assign>
               <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="243.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[&quot;client name is: &quot; + out_ClientName]" />
@@ -182,7 +182,7 @@
                   <OutArgument x:TypeArguments="x:String">[out_ClientCountry]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[out_ClientCountryArray(1).ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[out_ClientCountryArray(1).ToString.Trim]</InArgument>
                 </Assign.Value>
               </Assign>
               <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="243.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[&quot;client country is: &quot; + out_ClientCountry]" />
